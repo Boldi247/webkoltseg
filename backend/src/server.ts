@@ -10,6 +10,7 @@ import limiter from "@/lib/express_rate_limit";
 import v1Routes from "@/routes/v1";
 import { connectToDatabase, disconnectFromDatabase } from "@/lib/mongoose";
 import { logger } from "@/lib/winston";
+import { Environment } from "./constants/global";
 
 const app = express();
 
@@ -18,7 +19,7 @@ let server: ReturnType<typeof app.listen>;
 const corsOptions: CorsOptions = {
     origin(origin, callback) {
         if (
-            config.NODE_ENV === "DEV" ||
+            config.NODE_ENV === Environment.DEV ||
             !origin ||
             config.WHITELIST_ORIGINS.includes(origin)
         ) {
@@ -70,7 +71,7 @@ app.use(limiter);
     } catch (error) {
         logger.error("Failed to start the server", error);
 
-        if (config.NODE_ENV === "PROD") {
+        if (config.NODE_ENV === Environment.PROD) {
             process.exit(1);
         }
     }

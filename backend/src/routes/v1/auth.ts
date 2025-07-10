@@ -5,10 +5,13 @@ import bcrypt from "bcrypt";
 import register from "@/controllers/v1/auth/register";
 import login from "@/controllers/v1/auth/login";
 
-import { body } from "express-validator";
+import { body, cookie } from "express-validator";
 import validationError from "@/middlewares/validationError";
 
 import User from "@/models/user";
+import refreshToken from "@/controllers/v1/auth/refreshToken";
+import logout from "@/controllers/v1/auth/logout";
+import authenticate from "@/middlewares/authenticate";
 
 const router = Router();
 
@@ -86,5 +89,18 @@ router.post(
         }),
     login,
 );
+
+router.post(
+    "/refresh-token",
+    cookie("refreshToken")
+        .notEmpty()
+        .withMessage("Refresh token required")
+        .isJWT()
+        .withMessage("Invalid refresh token"),
+    validationError,
+    refreshToken,
+);
+
+router.post("/logout", authenticate, logout);
 
 export default router;

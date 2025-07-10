@@ -6,6 +6,7 @@ import User from "@/models/user";
 import Token from "@/models/token";
 import { iUser } from "@/models/user";
 import { generateAccessToken, generateRefreshToken } from "@/lib/jwt";
+import { Environment } from "@/constants/global";
 
 type UserData = Pick<iUser, "name" | "email" | "password">;
 
@@ -35,7 +36,7 @@ const register = async (req: Request, res: Response): Promise<void> => {
 
         res.cookie("refreshToken", refreshToken, {
             httpOnly: true,
-            secure: config.NODE_ENV === "PROD",
+            secure: config.NODE_ENV === Environment.PROD,
             sameSite: "strict",
         });
 

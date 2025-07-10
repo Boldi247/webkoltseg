@@ -7,6 +7,7 @@ import Token from "@/models/token";
 
 import type { Request, Response } from "express";
 import type { iUser } from "@/models/user";
+import { Environment } from "@/constants/global";
 
 type UserData = Pick<iUser, "email" | "password">;
 
@@ -41,7 +42,7 @@ const login = async (req: Request, res: Response): Promise<void> => {
 
         res.cookie("refreshToken", refreshToken, {
             httpOnly: true,
-            secure: config.NODE_ENV === "production",
+            secure: config.NODE_ENV === Environment.PROD,
             sameSite: "strict",
         });
 

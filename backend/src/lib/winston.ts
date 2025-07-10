@@ -1,6 +1,7 @@
 import winston from "winston";
 
 import config from "@/config";
+import { Environment } from "@/constants/global";
 
 const { combine, timestamp, json, errors, align, printf, colorize } =
     winston.format;
@@ -32,7 +33,7 @@ const logger = winston.createLogger({
     level: config.LOG_LEVEL,
     format: combine(timestamp(), errors({ stack: true }), json()),
     transports,
-    silent: config.NODE_ENV === "TEST",
+    silent: config.NODE_ENV === Environment.TEST,
 });
 
 export { logger };
