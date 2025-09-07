@@ -1,0 +1,165 @@
+:root {
+    /* TEXT COLORS */
+    --text-color-primary: #080808;
+
+    /* BACKGROUND COLORS */
+    --background-color-white: #efefef;
+    --background-color-main: #2196F3;
+    --background-color-semi-transparent: rgba(255, 255, 255, 0.392);
+    --background-color-border: #e5e5e5;
+}
+
+/** TYPOGRAPHY **/
+.typography-display {
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 35.1px;
+  text-align: left;
+}
+
+.typography-heading-1 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.05px;
+  text-align: left;
+}
+
+.typography-heading-1-bold {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.05px;
+  text-align: left;
+}
+
+.typography-heading-2 {
+  font-size: 20px !important;
+  font-weight: 600;
+  line-height: 24.2px;
+  text-align: left;
+}
+
+.typography-heading-2-bold {
+  font-size: 20px !important;
+  font-weight: 700;
+  line-height: 24.2px;
+  text-align: left;
+}
+
+.typography-heading-3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.78px;
+  text-align: left;
+}
+
+.typography-lead-regular {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27.2px;
+  text-align: left;
+}
+
+.typography-lead-medium {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 27.2px;
+  text-align: left;
+}
+
+.typography-lead-semibold {
+  font-size: 17px !important;
+  font-weight: 600;
+  line-height: 27.2px;
+  text-align: left;
+}
+
+.typography-lead-bold {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 27.2px;
+  text-align: left;
+}
+
+.typography-body-regular {
+  font-size: 15px !important;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.typography-body-medium {
+  font-size: 15px !important;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.typography-body-semibold {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+}
+
+.typography-body-bold {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+}
+
+.typography-small-regular {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20.8px;
+  text-align: left;
+}
+
+.typography-small-medium {
+  font-size: 13px;
+  font-weight: 500px;
+  line-height: 20.8px;
+  text-align: left;
+}
+
+.typography-small-bold {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20.8px;
+  text-align: left;
+}
+
+.typography-mini-regular {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 17.6px;
+  text-align: left;
+}
+
+.typography-mini-semibold {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 17.6px;
+  text-align: left;
+}
+
+.typography-mini-bold {
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 17.6px;
+  text-align: left;
+}
+
+.typography-link-regular {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27.2px;
+  text-align: left;
+}
+
+.typography-link-small {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27.2px;
+  text-align: left;
+}

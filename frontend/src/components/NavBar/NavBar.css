@@ -1,0 +1,17 @@
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 18px;
+    background-color: var(--background-color-semi-transparent);
+    border-bottom: 1px solid var(--background-color-border);
+    position: sticky;
+}
+
+.navbar-avatar.p-avatar {
+    background: var(--background-color-main);
+}
+
+.navbar-avatar .p-avatar-icon {
+    color: var(--background-color-white);
+}

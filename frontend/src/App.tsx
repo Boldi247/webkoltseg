@@ -1,7 +1,12 @@
+import Providers from "./providers/Providers"
+import Router from "./router/Router"
+
 function App() {
   return (
     <>
-      <div>Hello world!</div>
+      <Providers>
+        <Router/>
+      </Providers>
     </>
   )
 }
