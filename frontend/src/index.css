@@ -1,6 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family, system-ui, sans-serif);
+  background-color: var(--background-color-white);
+  color: var(--text-color-primary);
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    display: block;
-    background-color: var(--background-color-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color-primary);
 }

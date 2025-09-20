@@ -1,0 +1,19 @@
+{
+  // Keep format on save
+  "editor.formatOnSave": true,
+
+  // Use Prettier as default formatter for this project
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Optional: auto-run Prettier on save (even without ESLint)
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+
+  // Optional: Prettier config overrides
+  "prettier.singleQuote": true,
+  "prettier.semi": true,
+  "prettier.trailingComma": "es5",
+  "prettier.printWidth": 100
+}

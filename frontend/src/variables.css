@@ -1,12 +1,33 @@
 :root {
     /* TEXT COLORS */
     --text-color-primary: #080808;
+    --text-color-white: rgb(247, 247, 247);
 
     /* BACKGROUND COLORS */
     --background-color-white: #efefef;
-    --background-color-main: #2196F3;
+    --background-color-primary: hsl(214 87% 40%);
+    --background-color-primary-light: hsl(214 87% 50%);
     --background-color-semi-transparent: rgba(255, 255, 255, 0.392);
     --background-color-border: #e5e5e5;
+
+    /* PADDINGS, MARGINS, GAPS, ETC. */
+    --padding-xs: 8px;
+    --padding-sm: 16px;
+    --padding-md: 24px;
+    --padding-lg: 32px;
+    --padding-xl: 40px;
+    --padding-xxl: 48px;
+
+    /* BORDER RADIUSES */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --border-radius-xl: 16px;
+    --border-radius-xxl: 20px;
+    --border-radius-full: 50%;
+
+    /* BORDER COLORS */
+    --border-color-light: #cccccc;
 }
 
 /** TYPOGRAPHY **/
@@ -162,4 +183,17 @@
   font-weight: 400;
   line-height: 27.2px;
   text-align: left;
+}
+
+.gradient-primary-text {
+  background: linear-gradient(
+    135deg,
+    var(--background-color-primary),
+    var(--background-color-primary-light)
+  );
+  background-clip: text;
+  width: fit-content;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }

@@ -1,16 +1,34 @@
-const HomePageMainSection = () => {
-  return (
-    <div className="home-page-main-section">
-      <div className="home-page-main-section-grid">
-        <div className="home-page-main-section-introduction">
-          <p>text</p>
-        </div>
-        <div className="home-page-main-section-image-container">
-          <p>hello</p>
-        </div>
-      </div>
-    </div>
-  )
-}
+import Text from "../../../components/Text/Text";
 
-export default HomePageMainSection
+const HomePageMainSection = () => {
+    return (
+        <div className="home-page-main-section">
+            <Text>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                delectus labore eos natus cupiditate quae possimus culpa sequi,
+                deleniti in non quod voluptatum eius. Modi suscipit impedit
+                inventore consequuntur accusantium!
+            </Text>
+            <Text>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                delectus labore eos natus cupiditate quae possimus culpa sequi,
+                deleniti in non quod voluptatum eius. Modi suscipit impedit
+                inventore consequuntur accusantium!
+            </Text>
+            <Text>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                delectus labore eos natus cupiditate quae possimus culpa sequi,
+                deleniti in non quod voluptatum eius. Modi suscipit impedit
+                inventore consequuntur accusantium!
+            </Text>
+            <Text>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                delectus labore eos natus cupiditate quae possimus culpa sequi,
+                deleniti in non quod voluptatum eius. Modi suscipit impedit
+                inventore consequuntur accusantium!
+            </Text>
+        </div>
+    );
+};
+
+export default HomePageMainSection;
